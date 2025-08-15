@@ -1,13 +1,9 @@
-// App.tsx
+// import statements get components from other files and the useState hook from react
 import LeagueInput from './LeagueInput';
 import Schedule from './Schedule';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-/**
- * The main App component just renders a title and the LeagueInput component.
- * No state here — it's a "presentational" component.
- */
-export default function App(): JSX.Element {
+export default function App(): React.JSX.Element {
     const [leagueId, setLeagueId] = useState<string>('');
     const [week, setWeek] = useState<number>(1);
 
